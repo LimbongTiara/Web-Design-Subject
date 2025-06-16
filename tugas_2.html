@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Nama file: tugas_2.html-->
+    <!--Nama Author: Tiara Limbong-->
+    <title>Tugas_2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <style>
+    body {
+      background-color: hsla(253, 100%, 98%, 0.831);
+    }
+    </style>
+
+</head>
+<body>
+    <h1>UNKLAB Registration Form for New Student</h1>
+    <label for="">Registration number:</label>
+    <input type="text" name="" id=""><br><br>
+
+    <form action="/action_page.php">
+
+      <!--Table Personal Information-->
+  <fieldset>
+    <legend>Personal Information:</legend><br>
+    <label for="fname">Full Name:</label>
+    <input type="text" id="fname" name="fname"><br><br>
+
+    <label for="fname">Birthplace:</label>
+    <input type="text" id="fname" name="fname">
+
+    <label for="birth">Birthday:</label>
+    <input type="date" id="birthday" name="Date of Birth"><br><br>
+
+     <label for="gender">Gender:</label>
+    <input type="radio" id="male" name="male">Male
+    <input type="radio" id="female" name="female">Female<br><br>
+
+    <label for="gender">Blood Type:</label>
+    <input type="radio" id="A" name="A">A
+    <input type="radio" id="B" name="B">B
+    <input type="radio" id="AB" name="AB">AB
+    <input type="radio" id="O" name="O">O<br><br>
+
+    <label for="lname">Tribe:</label>
+    <input type="text" id="lname" name="lname">
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email"><br><br>
+
+    <label for="number">Telephone Number:</label>
+    <input type="number" id="number" name="number"><br><br>
+
+    <label for="number">Mobile Number:</label>
+    <input type="number" id="number" name="number"><br><br>
+
+    <label for="status">Status:</label>
+      <select name="status" id="status">
+        <option value="status">Single</option>
+        <option value="status">Married</option>
+     </select>
+
+    <label for="religion">Religion:</label>
+      <select name="religion" id="religion">
+        <option value="Kristen">Kristen</option>
+        <option value="Islam">Islam</option>
+        <option value="Katolik">Katolik</option>
+        <option value="Budha">Budha</option>
+        <option value="Hindu">Hindu</option>
+        <option value="Konghucu">Konghucu</option>
+        <option value="Lainnya">Lainnya</option>
+      </select> <br><br>
+
+    <label for="text">Home Address:</label>
+    <input type="text" id="text" name="text"><br><br>
+
+    <label for="number">Postal Code:</label>
+    <input type="number" id="number" name="number"><br>
+  </fieldset>
+  <br>
+  <br>
+
+  <!--Table School Information-->
+  <fieldset>
+    <legend>School Information:</legend><br>
+
+    <label for="fname">High School's Name:</label>
+    <input type="text" id="fname" name="fname"><br><br>
+
+    <label for="lname">Program:</label>
+    <input type="text" id="lname" name="lname"><br><br>
+
+    <label for="number">Telepon number:</label>
+    <input type="number" id="number" name="number"><br><br>
+
+    <label for="fname">School Address:</label>
+    <input type="text" id="fname" name="fname"><br><br>
+
+    <label for="number">Postal Code:</label>
+    <input type="number" id="number" name="number"><br>
+  </fieldset>
+</form>
+
+<br>
+<br>
+
+<!--Table Parent's Information -->
+<fieldset>
+  <legend>Parent's Information:</legend><br>
+  <label for="fname">Father's Name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+
+  <label for="number">Mobile Number:</label>
+  <input type="number" id="number" name="number"><br><br>
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email"><br><br>
+
+  <label for="Education">Education:</label>
+<select name="Education" id="Education">
+  <option value="Early Childhood Education">Early Childhood Education</option>
+  <option value="Preschool/Kindergarten">Preschool/Kindergarten</option>
+  <option value="Elementary School/Primary School">Elementary School/Primary School</option>
+  <option value="Middle School/Junior High School">Middle School/Junior High School</option>
+  <option value="High School/Senior High School">High School/Senior High School</option>
+  <option value="Vocational School">Vocational School</option>
+  <option value="Lainnya">Lainnya</option>
+</select> 
+
+<label for="religion">Religion:</label>
+<select name="religion" id="religion">
+  <option value="Kristen">Kristen</option>
+  <option value="Islam">Islam</option>
+  <option value="Katolik">Katolik</option>
+  <option value="Budha">Budha</option>
+  <option value="Hindu">Hindu</option>
+  <option value="Konghucu">Konghucu</option>
+  <option value="Lainnya">Lainnya</option>
+</select> <br><br>
+
+  <label for="lname">Mother's Name:</label>
+  <input type="text" id="lname" name="lname"><br><br>
+
+  <label for="number">Mobile Number:</label>
+  <input type="number" id="number" name="number"><br><br>
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email"><br><br>
+
+  <label for="Education">Education:</label>
+<select name="Education" id="Education">
+  <option value="Early Childhood Education">Early Childhood Education</option>
+  <option value="Preschool/Kindergarten">Preschool/Kindergarten</option>
+  <option value="Elementary School/Primary School">Elementary School/Primary School</option>
+  <option value="Middle School/Junior High School">Middle School/Junior High School</option>
+  <option value="High School/Senior High School">High School/Senior High School</option>
+  <option value="Vocational School">Vocational School</option>
+  <option value="Lainnya">Lainnya</option>
+</select> 
+
+<label for="religion">Religion:</label>
+<select name="religion" id="religion">
+  <option value="Kristen">Kristen</option>
+  <option value="Islam">Islam</option>
+  <option value="Katolik">Katolik</option>
+  <option value="Budha">Budha</option>
+  <option value="Hindu">Hindu</option>
+  <option value="Konghucu">Konghucu</option>
+  <option value="Lainnya">Lainnya</option>
+</select> <br>
+ </fieldset>
+
+ <br><br>
+
+<!--Table Carer's Information-->
+
+ <fieldset>
+  <legend>Carer's Information:</legend><br>
+  <label for="fname">Full Name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+
+  <label for="fname">Mobile Number:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email"><br><br>
+
+  <label for="number">Home Phone Number:</label>
+  <input type="text" id="number" name="number"><br><br>
+
+  <label for="number">Mobile Number:</label>
+  <input type="text" id="number" name="number"><br><br>
+
+  <label for="Education">Education:</label>
+<select name="Education" id="Education">
+  <option value="Early Childhood Education">Early Childhood Education</option>
+  <option value="Preschool/Kindergarten">Preschool/Kindergarten</option>
+  <option value="Elementary School/Primary School">Elementary School/Primary School</option>
+  <option value="Middle School/Junior High School">Middle School/Junior High School</option>
+  <option value="High School/Senior High School">High School/Senior High School</option>
+  <option value="Vocational School">Vocational School</option>
+  <option value="Lainnya">Lainnya</option>
+</select> 
+
+<label for="religion">Religion:</label>
+<select name="religion" id="religion">
+  <option value="Kristen">Kristen</option>
+  <option value="Islam">Islam</option>
+  <option value="Katolik">Katolik</option>
+  <option value="Budha">Budha</option>
+  <option value="Hindu">Hindu</option>
+  <option value="Konghucu">Konghucu</option>
+  <option value="Lainnya">Lainnya</option>
+</select> <br>
+ </fieldset>
+
+<!--Penutup-->
+<p><input type="checkbox">I here by state that all information on this New Student Registration Form are complete and true.</p>
+<p>All contents on this form I submitted to Universitas Klabat and Universitas Klabat are not oblidge to return it.</p>
+
+Airmadidi, <input type="date">
+<br>
+<br>
+
+<div class="text-end mt-4">
+  <button type="button" class="btn btn-warning me-2" onclick="reset()">Reset Form</button>
+  <button type="button" class="btn btn-success" onclick="success()">Register</button>
+</div>
+
+
+<!--Style Editing-->
+<script>
+  function success(){
+    Swal.fire({
+  position: "top-end",
+  icon: "success",
+  title: "Registration is succesful",
+  showConfirmButton: false,
+  timer: 1500
+});
+  }
+
+  function reset(){
+    Swal.fire({
+  title: "Do you want to save the changes?",
+  showDenyButton: true,
+  showCancelButton: true,
+  confirmButtonText: "Save",
+  denyButtonText: `Don't save`
+}).then((result) => {
+  /* Read more about isConfirmed, isDenied below */
+  if (result.isConfirmed) {
+    Swal.fire("Saved!", "", "success");
+  } else if (result.isDenied) {
+    Swal.fire("Changes are not saved", "", "info");
+  }
+});
+  }
+</script>
+
+</body>
+</html>
