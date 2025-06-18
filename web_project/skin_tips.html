@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlowUp - Skin Tips</title>
+    <link rel="stylesheet" href="style_skin_tips.css" />
+</head>
+<body>
+    <div class="fContainer">
+        <!-- Navigation -->
+        <nav class="wrapper">
+            <div class="skincare">
+                <div class="firstname">Glow</div>
+                <div class="lastname">Up</div>
+            </div>
+            <ul class="navigation">
+                <li>
+                    <a href="project_mid.html">Home</a>
+                </li>
+                <li>
+                    <a href="type_of_skin.html">Types of Skin</a>
+                </li>
+                <li>
+                    <a href="skin_tips.html" class="active">Skin Tips</a>
+                </li>
+                <li>
+                    <img src="kitten.jpg" alt="Profile" />
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Page Header -->
+            <div class="page-header">
+                <h1 class="page-title">Skin Care Tips</h1>
+                <p class="page-subtitle">Expert advice for healthy, glowing skin</p>
+            </div>
+
+            <!-- Skin Type Quiz -->
+            <div class="quiz-section">
+                <div class="quiz-container">
+                    <p class="quiz-question">How does your skin feel after cleansing?</p>
+                    <div class="quiz-options">
+                        <button class="quiz-button">Tight and dry</button>
+                        <button class="quiz-button">Oily all over</button>
+                        <button class="quiz-button">Oily T-zone, dry cheeks</button>
+                        <button class="quiz-button">Normal and comfortable</button>
+                    </div>
+                    <div class="quiz-result" id="quiz-result" style="display: none;">
+                        <h3>Your Skin Type: <span id="skin-type"></span></h3>
+                        <p id="skin-advice"></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Daily Routine -->
+            <div class="routine-section">
+                <h2 class="section-title">Daily Skincare Routine</h2>
+                <div class="routine-grid">
+                    <div class="routine-card morning">
+                        <div class="routine-icon">🌅</div>
+                        <h3>Morning Routine</h3>
+                        <ol class="routine-steps">
+                            <li>Gentle cleanser</li>
+                            <li>Toner</li>
+                            <li>Vitamin C serum</li>
+                            <li>Moisturizer</li>
+                            <li>Sunscreen SPF 30+</li>
+                        </ol>
+                        <p class="routine-tip">💡 Always apply sunscreen as the last step!</p>
+                    </div>
+                    <div class="routine-card evening">
+                        <div class="routine-icon">🌙</div>
+                        <h3>Evening Routine</h3>
+                        <ol class="routine-steps">
+                            <li>Makeup remover (if needed)</li>
+                            <li>Gentle cleanser</li>
+                            <li>Toner</li>
+                            <li>Treatment serum</li>
+                            <li>Night moisturizer</li>
+                        </ol>
+                        <p class="routine-tip">💡 Use treatment serums at night for better absorption!</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tips by Skin Type -->
+            <div class="skin-type-tips">
+                <h2 class="section-title">Tips by Skin Type</h2>
+                <div class="tips-grid">
+                    <div class="tip-card">
+                        <div class="tip-icon">😊</div>
+                        <h3>Normal Skin</h3>
+                        <ul class="tip-list">
+                            <li>Gentle cleanser (morning and night)</li>
+                            <li>lightweight moisturizer</li>
+                            <li>Board-spectrum sunscreen (SPF 30+)</li>
+                        </ul>
+                    </div>
+                    <div class="tip-card">
+                        <div class="tip-icon">🪨</div>
+                        <h3>Dry Skin</h3>
+                        <ul class="tip-list">
+                            <li>Use cream-based cleansers</li>
+                            <li>Apply moisturizer on damp skin</li>
+                            <li>Use hydrating masks 2x/week</li>
+                            <li>Avoid alcohol-based products</li>
+                        </ul>
+                    </div>
+                    <div class="tip-card">
+                        <div class="tip-icon">💧</div>
+                        <h3>Oily Skin</h3>
+                        <ul class="tip-list">
+                            <li>Use gel or foam cleansers</li>
+                            <li>Don't skip moisturizer</li>
+                            <li>Use clay masks 1-2x/week</li>
+                            <li>Look for non-comedogenic products</li>
+                        </ul>
+                    </div>
+                    <div class="tip-card">
+                        <div class="tip-icon">⚖️</div>
+                        <h3>Combination Skin</h3>
+                        <ul class="tip-list">
+                            <li>Use different products for different areas</li>
+                            <li>Lightweight moisturizer for T-zone</li>
+                            <li>Rich moisturizer for dry areas</li>
+                            <li>Multi-masking technique</li>
+                        </ul>
+                    </div>
+                    <div class="tip-card">
+                        <div class="tip-icon">🌸</div>
+                        <h3>Sensitive Skin</h3>
+                        <ul class="tip-list">
+                            <li>Patch test new products</li>
+                            <li>Use fragrance-free products</li>
+                            <li>Gentle, minimal ingredient formulas</li>
+                            <li>Avoid over-exfoliating</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Common Problems -->
+            <div class="problems-section">
+                <h2 class="section-title">Common Skin Problems & Solutions</h2>
+                <div class="problems-grid">
+                    <div class="problem-card">
+                        <h3>🔴 Acne & Breakouts</h3>
+                        <div class="problem-content">
+                            <p><strong>Causes:</strong> Excess oil, clogged pores, bacteria</p>
+                            <p><strong>Solutions:</strong></p>
+                            <ul>
+                                <li>Use salicylic acid or benzoyl peroxide</li>
+                                <li>Don't pick or squeeze pimples</li>
+                                <li>Keep hair and hands away from face</li>
+                                <li>Change pillowcases regularly</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="problem-card">
+                        <h3>🟤 Dark Spots</h3>
+                        <div class="problem-content">
+                            <p><strong>Causes:</strong> Sun damage, acne scars, aging</p>
+                            <p><strong>Solutions:</strong></p>
+                            <ul>
+                                <li>Use vitamin C serum daily</li>
+                                <li>Apply sunscreen religiously</li>
+                                <li>Try niacinamide products</li>
+                                <li>Consider gentle exfoliation</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="problem-card">
+                        <h3>👀 Under Eye Bags</h3>
+                        <div class="problem-content">
+                            <p><strong>Causes:</strong> Lack of sleep, dehydration, genetics</p>
+                            <p><strong>Solutions:</strong></p>
+                            <ul>
+                                <li>Get 7-8 hours of sleep</li>
+                                <li>Use eye cream with caffeine</li>
+                                <li>Apply cold compress</li>
+                                <li>Stay hydrated</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DIY Masks -->
+            <div class="diy-section">
+                <h2 class="section-title">DIY Natural Masks</h2>
+                <div class="diy-grid">
+                    <div class="diy-card">
+                        <div class="diy-icon">🥒</div>
+                        <h3>Hydrating Cucumber Mask</h3>
+                        <p><strong>Ingredients:</strong> 1/2 cucumber, 1 tbsp honey</p>
+                        <p><strong>How to:</strong> Blend cucumber, mix with honey, apply for 15 minutes</p>
+                        <p><strong>Best for:</strong> Dry, irritated skin</p>
+                    </div>
+                    <div class="diy-card">
+                        <div class="diy-icon">🍯</div>
+                        <h3>Oatmeal Honey Mask</h3>
+                        <p><strong>Ingredients:</strong> 2 tbsp oatmeal, 1 tbsp honey</p>
+                        <p><strong>How to:</strong> Mix ingredients, gently scrub and leave for 10 minutes</p>
+                        <p><strong>Best for:</strong> Oily, acne-prone skin</p>
+                    </div>
+                    <div class="diy-card">
+                        <div class="diy-icon">🍌</div>
+                        <h3>Banana Avocado Mask</h3>
+                        <p><strong>Ingredients:</strong> 1/2 banana, 1/4 avocado</p>
+                        <p><strong>How to:</strong> Mash together, apply for 20 minutes</p>
+                        <p><strong>Best for:</strong> Mature, dry skin</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Myth vs Facts -->
+            <div class="myth-section">
+                <h2 class="section-title">Skincare Myths vs Facts</h2>
+                <div class="myth-grid">
+                    <div class="myth-card myth">
+                        <h3>❌ MYTH</h3>
+                        <p>"Oily skin doesn't need moisturizer"</p>
+                    </div>
+                    <div class="myth-card fact">
+                        <h3>✅ FACT</h3>
+                        <p>"All skin types need moisturizer. Skipping it can make oily skin produce more oil!"</p>
+                    </div>
+                    <div class="myth-card myth">
+                        <h3>❌ MYTH</h3>
+                        <p>"You only need sunscreen on sunny days"</p>
+                    </div>
+                    <div class="myth-card fact">
+                        <h3>✅ FACT</h3>
+                        <p>"UV rays penetrate clouds. Wear sunscreen daily, even indoors near windows!"</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2025 GlowUp Skincare. Made with 💜 for beautiful skin.</p>
+        </footer>
+    </div>
+
+    <script>
+        // Simple skin type quiz
+        const quizButtons = document.querySelectorAll('.quiz-button');
+        const quizResult = document.getElementById('quiz-result');
+        const skinType = document.getElementById('skin-type');
+        const skinAdvice = document.getElementById('skin-advice');
+
+        const skinTypes = {
+            'Tight and dry': {
+                type: 'Dry Skin',
+                advice: 'Your skin needs extra hydration! Use cream-based cleansers and rich moisturizers. Look for ingredients like hyaluronic acid and ceramides.'
+            },
+            'Oily all over': {
+                type: 'Oily Skin',
+                advice: 'Your skin produces excess oil. Use gel cleansers and lightweight, oil-free moisturizers. Salicylic acid can help control oil production.'
+            },
+            'Oily T-zone, dry cheeks': {
+                type: 'Combination Skin',
+                advice: 'You have different needs for different areas! Use lightweight products on your T-zone and richer products on your cheeks.'
+            },
+            'Normal and comfortable': {
+                type: 'Normal Skin',
+                advice: 'Lucky you! Your skin is well-balanced. Maintain it with gentle cleansers, light moisturizers, and always use sunscreen.'
+            }
+        };
+
+        quizButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const answer = button.textContent;
+                const result = skinTypes[answer];
+                
+                skinType.textContent = result.type;
+                skinAdvice.textContent = result.advice;
+                quizResult.style.display = 'block';
+                
+                // Remove active class from all buttons
+                quizButtons.forEach(btn => btn.classList.remove('active'));
+                // Add active class to clicked button
+                button.classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>

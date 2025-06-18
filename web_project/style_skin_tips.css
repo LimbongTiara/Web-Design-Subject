@@ -1,0 +1,437 @@
+*, html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+}
+
+.fContainer {
+    display: flex;
+    flex-direction: column;
+    width: 98%;
+    min-height: 100vh;
+    background-color: rgb(166, 109, 216);
+}
+
+/* Navigation - sama seperti sebelumnya */
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    padding: 15px;
+    width: 100%;
+    height: 80px;
+    background-color: rgb(210, 167, 250);
+    box-shadow: 0 7px 15px 0 rgb(46, 27, 60);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.skincare {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.5em;
+    padding: 15px;
+    text-transform: capitalize;
+}
+
+.firstname {
+    color: #673bce;
+    font-weight: 700;
+}
+
+.lastname {
+    color: white;
+    font-weight: 400;
+    padding-left: 4px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation > li {
+    list-style-type: none;
+    padding: 15px;   
+}
+
+.navigation > li > a {
+    color: rgb(128, 10, 158);
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.navigation > li > a:hover {
+    color: rgb(53, 5, 99);
+    transition: all .2s ease-in-out;
+}
+
+.navigation > li > a.active {
+    color: rgb(53, 5, 99);
+    font-weight: 600;
+}
+
+.navigation > li > img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+.navigation > li > img:hover {
+    width: 55px;
+    height: 55px;
+    border-radius: 55px;
+    transition: all .2s ease-in-out;
+}
+
+/* Main Content */
+.main-content {
+    flex: 1;
+    padding: 40px 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* Page Header */
+.page-header {
+    text-align: center;
+    margin-bottom: 50px;
+    color: white;
+}
+
+.page-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.page-subtitle {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* Section Titles */
+.section-title {
+    text-align: center;
+    font-size: 2.2rem;
+    color: white;
+    margin-bottom: 40px;
+    font-weight: 600;
+}
+
+/* Quiz Section */
+.quiz-section {
+    margin-bottom: 60px;
+}
+
+.quiz-container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(46, 27, 60, 0.2);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.quiz-question {
+    font-size: 1.3rem;
+    color: rgb(99, 21, 151);
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.quiz-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.quiz-button {
+    background-color: #f0f0f0;
+    color: rgb(99, 21, 151);
+    padding: 15px 25px;
+    border: 2px solid transparent;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.quiz-button:hover,
+.quiz-button.active {
+    background-color: rgb(99, 21, 151);
+    color: white;
+    border-color: rgb(99, 21, 151);
+}
+
+.quiz-result {
+    background: linear-gradient(45deg, #b07cf5, rgb(166, 109, 216));
+    color: white;
+    padding: 25px;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+.quiz-result h3 {
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+}
+
+/* Routine Section */
+.routine-section {
+    margin-bottom: 60px;
+}
+
+.routine-grid {
+    display: flex;
+    gap: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.routine-card {
+    flex: 1;
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(46, 27, 60, 0.2);
+    text-align: center;
+}
+
+.routine-icon {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.routine-card h3 {
+    color: rgb(99, 21, 151);
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+}
+
+.routine-steps {
+    text-align: left;
+    color: #666;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+.routine-steps li {
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+.routine-tip {
+    background-color: #f8f0ff;
+    color: rgb(99, 21, 151);
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+/* Tips by Skin Type */
+.skin-type-tips {
+    margin-bottom: 60px;
+}
+
+.tips-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.tip-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(46, 27, 60, 0.2);
+    text-align: center;
+}
+
+.tip-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.tip-card h3 {
+    color: rgb(99, 21, 151);
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+}
+
+.tip-list {
+    text-align: left;
+    color: #666;
+    padding-left: 20px;
+}
+
+.tip-list li {
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+/* Problems Section */
+.problems-section {
+    margin-bottom: 60px;
+}
+
+.problems-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 25px;
+}
+
+.problem-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(46, 27, 60, 0.2);
+}
+
+.problem-card h3 {
+    color: rgb(99, 21, 151);
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.problem-content p {
+    color: #666;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.problem-content ul {
+    color: #666;
+    padding-left: 20px;
+}
+
+.problem-content li {
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+/* DIY Section */
+.diy-section {
+    margin-bottom: 60px;
+}
+
+.diy-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.diy-card {
+    background: linear-gradient(135deg, white, #f8f0ff);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(46, 27, 60, 0.2);
+    text-align: center;
+}
+
+.diy-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.diy-card h3 {
+    color: rgb(99, 21, 151);
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+}
+
+.diy-card p {
+    color: #666;
+    margin-bottom: 15px;
+    line-height: 1.5;
+    text-align: left;
+}
+
+/* Myth vs Facts */
+.myth-section {
+    margin-bottom: 60px;
+}
+
+.myth-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.myth-card {
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(46, 27, 60, 0.2);
+}
+
+.myth-card.myth {
+    background-color: #ffe6e6;
+    border-left: 5px solid #ff4757;
+}
+
+.myth-card.fact {
+    background-color: #e6ffe6;
+    border-left: 5px solid #2ed573;
+}
+
+.myth-card h3 {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+.myth-card.myth h3 {
+    color: #ff4757;
+}
+
+.myth-card.fact h3 {
+    color: #2ed573;
+}
+
+.myth-card p {
+    color: #666;
+    line-height: 1.5;
+}
+
+/* Footer */
+.footer {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .routine-grid {
+        flex-direction: column;
+    }
+    
+    .quiz-options {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .quiz-button {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .page-title {
+        font-size: 2.5rem;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+}
